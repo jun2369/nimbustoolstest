@@ -1,7 +1,4 @@
 
-
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-import React from 'react';
 import { useState } from 'react';
 
 function App() {
@@ -16,7 +13,6 @@ function App() {
 
   return (
     <div style={{ display: 'flex', height: '100vh', fontFamily: 'sans-serif' }}>
-      {/* Sidebar */}
       <aside style={{ width: '260px', backgroundColor: '#f3f3f3', padding: '1rem', borderRight: '1px solid #ccc' }}>
         <h2 style={{ marginBottom: '1rem' }}>Nimbus Tools</h2>
         <div style={{ marginBottom: '0.5rem', fontWeight: 'bold', color: '#6b21a8' }}>Nimbus</div>
@@ -42,13 +38,11 @@ function App() {
         </div>
       </aside>
 
-      {/* Main Content */}
       <main style={{ flex: 1, padding: '2rem' }}>
         {activeSubItem === 'netchb' && <div>NETCHB Converter Content Placeholder</div>}
         {activeSubItem === 'track' && <div>T01 Track Query Content Placeholder</div>}
         {activeSubItem === 'magaya' && <div>Magaya Content Placeholder</div>}
         {activeSubItem === 'Download' && <div>T01PGA Content Placeholder</div>}
-
         {!activeSubItem && <div>Please select an item from the sidebar.</div>}
       </main>
     </div>
